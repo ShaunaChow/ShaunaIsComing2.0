@@ -1,0 +1,13 @@
+server:
+  port: 28002
+spring:
+  application:
+    name: UAA_server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:28001/eureka/
+  instance:
+    instance-id: UAA_server
+    prefer-ip-address: true

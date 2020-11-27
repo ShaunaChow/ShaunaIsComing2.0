@@ -1,0 +1,24 @@
+server:
+  port: 28003
+spring:
+  application:
+    name: Regist_server
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://39.105.89.185:3306/ShaunaIsComing
+    username: root
+    password: zxf1023778132
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:28001/eureka/
+  instance:
+    instance-id: Regist_server
+    prefer-ip-address: true
+

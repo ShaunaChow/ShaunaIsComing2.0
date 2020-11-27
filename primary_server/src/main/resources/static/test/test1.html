@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tesst1</title>
+    <!--内部样式-->
+    <style>
+        /*1. 标签选择器： 直接选标签*/
+        span {
+            color: #00a4ff;
+        }
+        /*2. 类选择器，选class="。。"的标签*/
+        .red {
+            color: red;
+            background-color: red;
+        }
+        .div1 {
+            height: 200px;
+            width: 300px;
+        }
+        /*3. id选择器 只能调用一次 第二个不能使用了*/
+        #pink {
+            color: #ff7c2d;
+        }
+        /*4. 通配符选择器*/
+        * {
+            color: black;
+        }
+
+        /*5. 字体属性*/
+        * {
+            font-family: "Times New Roman";
+            font-size: 16px;
+            font-weight: 900;
+            font-style: italic;
+        }
+        /*6. 文本属性*/
+        * {
+            color: #050505;
+            /*水平对齐*/
+            text-align: left;
+            /*装饰文本*/
+            text-decoration: underline;
+            /*文本缩进 首行*/
+            text-indent: 5px;
+            /*行高！！！*/
+            line-height: 26px;
+
+        }
+        /*7. 后一代选择器 例如下面为ul下的所有li*/
+        ul li {
+            color: red;
+        }
+        /*8. 子选择器 例如下面的ol的子级li 而孙子级li不会被选*/
+        ol > li {
+            color: red;
+        }
+        /*9. 并集选择器*/
+        div,p {
+            color: red;
+        }
+        div,
+        p,
+        ul li {
+            color: red;
+        }
+        /*10. 伪类选择器*/
+        /*10.1 链接伪类选择器*/
+        /*未访问过的链接*/
+        a:link {
+            color: #ff7c2d;
+        }
+        /*访问过的链接*/
+        a:visited { }
+        /*鼠标经过的链接*/
+        a:hover {}
+        /*还有*/
+        a:active {}
+
+        p:hover{
+            color: blue;
+        }
+        /*10.2 focus伪类选择器*/
+        input:focus {
+            color: pink;
+        }
+
+        /*11. CSS中分为两种显示元素：块元素  行内元素*/
+        /*块元素有： h1-h6  p  div  ul  ol  li等*/
+        /*特点：*/
+            /*独占一行*/
+            /*高度宽度边距都可以改*/
+            /*宽度默认是容器（父级容器）的100%*/
+            /*是一个容器，里面可以放块级元素或行内元素*/
+        /*行内元素有： a strong span 等*/
+        /*特点：*/
+            /*相邻行内元素在一行上*/
+            /*高宽直接设置都无效（有一种例外，后面讲）*/
+            /*默认宽度就是他本身内容高度*/
+            /*行内元素只能容纳文本或者其他行内内元素*/
+        /*行内块元素有 img input td*/
+        /*特点：*/
+            /*相邻行内块元素在一行上*/
+            /*默认宽度就是呀本身内容宽度*/
+            /*高度 行高 外边距等可以控制*/
+
+        /*12. 不同种类元素相互转换*/
+        /*display: block/inline/inline-block;*/
+        a {
+            display: block;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        /*12. 背景*/
+        * {
+            background-color: transparent;
+            
+        }
+        /*12.2 背景图片 */
+        body {
+            background-image: url(bg.jpg);
+            /*默认是平铺的*/
+            background-repeat: repeat;
+            /*不平铺的*/
+            background-repeat: no-repeat;
+            /*沿着x或y轴平铺*/
+            /*background-repeat: repeat-x;*/
+            /*背景图片位置 两种方式*/
+            /*background-position: 10px 10px;*/
+            background-position: top center;
+            /*背景图像固定、滚动*/
+            /*background-attachment: scroll;*/
+            background-attachment: fixed;
+        }
+        /*背景色半透明*/
+        div {
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        /*13. CSS重叠性*/
+            /*优先级相同时后面的会覆盖前面的*/
+        /*14. 继承性*/
+            /*子标签会继承夫标签的某些样式 和字体相关的都可以*/
+        /*15. 优先级*/
+            /*若选择器相同，则用层重叠性*/
+            /*优先级：*/
+                /*继承或*               为 0000*/
+                /*元素选择器            为 0001*/
+                /*类选择器，伪类选择器  为 0010*/
+                /*ID选择器              为 0100*/
+                /*行内样式              为 1000*/
+                /*!important           为 无穷大*/
+        div {
+            color: #ff7c2d !important;
+        }
+        /*多级样式会叠加 下面这个叠加后为0002 注意叠加不会进位！！！*/
+        ul li {
+            color: #ff7c2d;
+        }
+
+        /*16. 盒子模型*/
+            /*盒子有以下几个重要因素*/
+                /*border 边框*/
+                /*content 内容*/
+                /*padding 内边距*/
+                /*margin 外边距*/
+        /*16.1 边框*/
+        div {
+            width: 300px;
+            height: 500px;
+            border-width: 20px;
+            border-style: solid;
+            border-color: #ff7c2d;
+            /*复合写法*/
+            border-top: 10px pink solid;
+            /*相邻边框合并*/
+            border-collapse: collapse;
+        }
+        /*16.2 内边距*/
+        .okkkk {
+            /*width和height不包含padding和border*/
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            border: 10px solid red;
+            padding: 10px;
+            padding-top: 20px;
+            padding: 10px 50px;
+        }
+        /*16.3 外边距*/
+        .okkkk {
+            /*width和height不包含padding和border*/
+            margin: 20px;
+        }
+        /*16.3 水平居中*/
+        .okkkk {
+            width: 600px;
+            margin: 20px auto;
+        }
+        /*16.4 内外边距清楚*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*16.5 盒子圆角边框*/
+        .okkkk {
+            /*border-radius: 20px;*/
+            border-radius: 30%;
+        }
+        /*16.6 盒子阴影*/
+        .okkkk:hover {
+            /*box-shadow: 左右位置 上下位置 模糊距离 阴影尺寸 颜色 [内阴影（inset）];*/
+            box-shadow: 10px 10px 10px 10px black;
+        }
+        /*16.7 文字阴影 略*/
+        /*text-shadow: ....*/
+
+
+
+
+
+
+
+
+
+    </style>
+    <!--引入CSS-->
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <div class="okkkk">nnnnnnnnnnnnnnnnnnnnnn</div>
+    <div class="okkkk">nnnnnnnnnnnnnnnnnnnnnn</div>
+    <!--行内样式-->
+    <h1 style="color: #ff7c2d">浦东是改革开放的热土，习近平牵挂殷殷。</h1>
+    <a href="/">okkkkkkk</a>
+    <p>浦东是改革开放的热土，习近平牵挂殷殷。2007年3月，刚刚担任上海市委书记的他选择浦东新区作为全市调研的第一站。三年后的2010年9月，时任国家副主席的习近平赴上海调研，专程参观了浦东开发开放成就展。当时正逢浦东开发开放20年，他说：“浦东发展的意义在于窗口作用、示范意义，在于敢闯敢试、先行先试，在于排头兵的作用。”</p>
+    <div class="div1 red"></div>
+    <h1>一级标签</h1>标签是一行显示的
+    <h6>六级标签</h6>
+    <p class="red">段落标签1</p>
+    <p id="pink">段落标签2</p>
+    <br/>换行
+    <strong>加粗标签</strong>
+    <b>b也是加粗标签</b>
+    <em>倾斜标签</em>
+    <i>i也是倾斜标签</i>
+    <del>删除标签</del>
+    <s>s也是删除标签</s>
+    <ins>下划线标签</ins>
+    <u>u也是下划线标签</u>
+
+    <div>
+        盒子标签div 独占一行！！！
+    </div>
+    <span>
+        也是盒子标签span1 不独占一行
+    </span>
+    <span>
+        也是盒子标签span2 不独占一行
+    </span>
+    <br>
+    <img src="/imgs/bg2.jpg"
+         alt="替换文本（图像不显示的时候替换）"
+         title="title(鼠标放图像上提示的文字)"
+         width="500"
+         height="400"
+         border="20">
+    <br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="http://www.shauna.top:8888" target="_blank">超链接</a>
+    <br><br><br><br>
+    <a href="#idname">锚点链接用#开头</a>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="idname">
+        okkkkkkkkkkkkkkokkkkkkkkkkkkkkokkkkkkkkkkkkkkokkkkkkkkkkkkkkokkkkkkkkkkkkkk
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    表格标签：<br>
+    <table align="center" border="5" >
+        <tr>
+            <th>表头1</th>
+            <th>表头2</th>
+            <th>表头3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">1-1</td>
+            <td colspan="2">1-2</td>
+        </tr>
+        <tr>
+            <td>2-2</td>
+            <td>2-3</td>
+        </tr>
+    </table>
+
+    <br>
+
+    无序列表:<br>
+    <ul>
+        <li>无序列表项目1</li>
+        <li>无序列表项目2</li>
+    </ul>
+    <br>
+
+    有序列表:<br>
+    <ol>
+        <li>项目1</li>
+        <li>项目2</li>
+    </ol>
+    <br>
+
+    自定义列表:<br>
+    <dl>
+        <dt>大标题</dt>
+        <dd>小弟1</dd>
+        <dd>小弟2</dd>
+        <dd>小弟3</dd>
+    </dl>
+    <br>
+
+    表单：<br>
+    <form action="http://www.shauna.top:8888" method="GET" name="名称">
+        名字： <input type="text" value="okkk"><br>
+        密码： <input type="password" maxlength="6"><br>
+        <!--name可以实现单选-->
+        性别： <label for="r1">男</label><input type="radio" name="r1" id="r1" checked>  女<input type="radio" name="r1"><br>
+        爱好:  泡妹子<input type="checkbox" checked>   泡妹子<input type="checkbox">   泡妹子<input type="checkbox"><br>
+        <input type="submit" value="submit1">
+        <input type="reset" value="reset">
+        <select>
+            <option>op1</option>
+            <option>op2</option>
+            <option selected="selected">op3</option>
+        </select>
+        <textarea>okkkkkk</textarea>
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+</body>
+</html>

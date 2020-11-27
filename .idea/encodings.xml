@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fs_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/login_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/primary_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/regist_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/registry_eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/uaa_server" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+.errorpage {
+    width: 1200px;
+    margin: auto;
+}
+
+.errorpage a {
+    display: block;
+    color: #050505;
+    width: 1200px;
+    margin: 100px 350px;
+    font-size: 30px;
+    text-decoration: none;
+}
