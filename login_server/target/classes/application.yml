@@ -1,0 +1,13 @@
+server:
+  port: 28004
+spring:
+  application:
+    name: Login_server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:28001/eureka/
+  instance:
+    instance-id: Login_server
+    prefer-ip-address: true

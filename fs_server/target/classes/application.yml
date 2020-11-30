@@ -1,0 +1,14 @@
+server:
+  port: 28005
+spring:
+  application:
+    name: FS-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:28001/eureka/
+  instance:
+    instance-id: FS-server
+    prefer-ip-address: true
+

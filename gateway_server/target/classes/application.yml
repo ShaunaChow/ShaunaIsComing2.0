@@ -1,0 +1,56 @@
+server:
+  port: 80
+spring:
+  application:
+    name: Gateway-server
+  datasource:
+    url: jdbc:mysql://39.105.89.185:3306/ShaunaIsComing
+    username: root
+    password: zxf1023778132
+    driver-class-name: com.mysql.jdbc.Driver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:28001/eureka/
+  instance:
+    instance-id: Gateway-server
+    prefer-ip-address: true
+
+zuul:
+  routes:
+    primary:
+      serviceId: Primary-server
+      path: /
+    fs:
+      serviceId: FS-server
+      path: /shaunafs/**
+    login:
+      serviceId: Login-server
+      path: /login/**
+    regist:
+      serviceId: Regist-server
+      path: /regist/**
+    uaa:
+      serviceId: UAA-server
+      path: /uaa/**
+    primary2:
+      serviceId: Primary-server
+      path: /primary/**
+  sensitive-headers:
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 10000
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
