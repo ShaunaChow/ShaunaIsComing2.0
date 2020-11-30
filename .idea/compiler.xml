@@ -10,7 +10,6 @@
         <module name="common_server" />
         <module name="fs_server" />
         <module name="gateway_server" />
-        <module name="login_server" />
         <module name="primary_server" />
         <module name="regist_server" />
         <module name="registry_eureka" />
@@ -19,6 +18,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common" target="1.8" />
+      <module name="login_server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

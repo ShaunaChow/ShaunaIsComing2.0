@@ -1,6 +1,5 @@
 package top.shauna.shaunaiscoming2.regist.controller;
 
-import org.hibernate.procedure.spi.ParameterRegistrationImplementor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Controller;
