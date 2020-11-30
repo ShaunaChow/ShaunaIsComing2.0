@@ -4,12 +4,12 @@ var items = document.querySelector('.items');
 function createXMLHttpRequest() {
     try{
         var request = new XMLHttpRequest();
-        request.setRequestHeader('Authorization','bearer '+sessionStorage.getItem('shauna-token'));
         return request;
     }catch (e) {
         try{
             return new ActiveXObject('Msxml2.XMLHTTP');
         }catch (e2) {
+            console.log(e2);
             throw e2;
         }
     }
@@ -49,7 +49,6 @@ function createItem(node) {
     a2.href = '/shaunafs/downloadtmp?filePath='+currentURL+node.path;
     a2.className = 'download';
     a2.innerText = '下载';
-    div.appendChild(a2);
 
     var a3 = document.createElement('a');
     a3.setAttribute('data-url',currentURL+node.path);
@@ -64,6 +63,10 @@ function createItem(node) {
     a3.innerText = '删除';
     div.appendChild(a3);
 
+    if (node.isFile == 0) {
+        div.appendChild(a2);
+    }
+
     var span = document.createElement('span');
     span.innerText = '-';
     div.appendChild(span);
@@ -75,6 +78,7 @@ function fileDelete(e) {
     e.preventDefault();
     var request = createXMLHttpRequest();
     request.open('GET','/shaunafs/rmfiletmp?filePath='+this.getAttribute('data-url'), true);
+    request.setRequestHeader('Authorization','bearer '+sessionStorage.getItem('shauna-token'));
     request.send(null);
     request.onreadystatechange = function () {
         if (request.readyState == 4 && request.status == 200) {
@@ -92,6 +96,7 @@ function dirDelete(e) {
     e.preventDefault();
     var request = createXMLHttpRequest();
     request.open('GET','/shaunafs/rmdirtmp?filePath='+this.getAttribute('data-url'), true);
+    request.setRequestHeader('Authorization','bearer '+sessionStorage.getItem('shauna-token'));
     request.send(null);
     request.onreadystatechange = function () {
         if (request.readyState == 4 && request.status == 200) {
@@ -114,6 +119,7 @@ function freshItems() {
     var request = createXMLHttpRequest();
 
     request.open('GET','/shaunafs/getDir?path='+currentURL, true);
+    request.setRequestHeader('Authorization','bearer '+sessionStorage.getItem('shauna-token'));
 
     request.send(null);
 
@@ -196,6 +202,7 @@ function basic(){
         }
         var request = createXMLHttpRequest();
         request.open('GET','/shaunafs/mkdirtmp?filePath='+currentURL+name, true);
+        request.setRequestHeader('Authorization','bearer '+sessionStorage.getItem('shauna-token'));
         request.send(null);
         request.onreadystatechange = function () {
             if (request.readyState == 4 && request.status == 200) {
@@ -234,6 +241,7 @@ function startFileUpload(file){
     var request = createXMLHttpRequest();
 
     request.open('POST','/shaunafs/uploadtmp', true);
+    request.setRequestHeader('Authorization','bearer '+sessionStorage.getItem('shauna-token'));
 
     request.send(formData);
 
@@ -249,5 +257,12 @@ function startFileUpload(file){
     };
 }
 
+function check(){
+    if (sessionStorage.getItem('shauna-token')==null) {
+        window.location.href = '/primary/login/login.html?msg=pleaseLogin';
+    }
+}
+
+window.addEventListener('load',check);
 window.addEventListener('load',freshItems);
 window.addEventListener('load',basic);

@@ -37,7 +37,8 @@ public class ResourceServerConfig {
         @Override
         public void configure(HttpSecurity http) throws Exception {
             http.authorizeRequests()
-                    .antMatchers("/uaa/**").permitAll();
+                    .antMatchers("/uaa/**")
+                    .permitAll();
         }
     }
 
@@ -57,6 +58,46 @@ public class ResourceServerConfig {
             http
                     .authorizeRequests()
                     .antMatchers("/primary/**")
+                    .permitAll();
+        }
+    }
+
+    //配置针对Regist的请求
+    @Configuration
+    @EnableResourceServer
+    public class RegistResourceServerConfig extends ResourceServerConfigurerAdapter {
+        @Override
+        public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
+            resources.resourceId(RESOURCE_ID)
+                    .tokenStore(tokenStore)
+                    .stateless(true);
+        }
+
+        @Override
+        public void configure(HttpSecurity http) throws Exception {
+            http
+                    .authorizeRequests()
+                    .antMatchers("/regist/**")
+                    .permitAll();
+        }
+    }
+
+    //配置针对Regist的请求
+    @Configuration
+    @EnableResourceServer
+    public class FSResourceServerConfig extends ResourceServerConfigurerAdapter {
+        @Override
+        public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
+            resources.resourceId(RESOURCE_ID)
+                    .tokenStore(tokenStore)
+                    .stateless(true);
+        }
+
+        @Override
+        public void configure(HttpSecurity http) throws Exception {
+            http
+                    .authorizeRequests()
+                    .antMatchers("/shaunafs/**")
                     .permitAll();
         }
     }

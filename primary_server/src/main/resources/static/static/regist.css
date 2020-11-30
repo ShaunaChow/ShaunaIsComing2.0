@@ -143,6 +143,37 @@ a {
     float: right;
     width: 200px;
     margin: 10px 0;
+    border: none;
+}
+
+.regist form input:focus{
+    outline: none;
+    border-bottom: 2px #999999 solid;
+}
+
+.regist form #validationCode{
+    float: right;
+    width: 80px;
+    margin: 10px 0;
+    border: none;
+}
+
+.regist form #validationCode:focus{
+    outline: none;
+    border-bottom: 2px #999999 solid;
+}
+
+.regist form .getCode:focus{
+    outline: none;
+}
+
+.regist form .getCode{
+    float: right;
+    width: 100px;
+    margin: 10px 10px;
+    border: none;
+    background-color: pink;
+    border-radius: 10px;
 }
 
 .regist form .submit{
@@ -182,6 +213,15 @@ a {
     top: 80px;
     left: 310px;
     width: 100px;
+    color: red;
+}
+
+.regist form .promt3{
+    position: absolute;
+    display: none;
+    top: 120px;
+    left: 310px;
+    width: 120px;
     color: red;
 }
 

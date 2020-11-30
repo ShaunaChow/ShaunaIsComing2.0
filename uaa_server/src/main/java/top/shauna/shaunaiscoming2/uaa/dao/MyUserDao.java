@@ -20,23 +20,23 @@ public class MyUserDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public User getUserByPhone(String phone){
-        List<User> list = jdbcTemplate.query("select * from users where phonenum=?",
-                new Object[]{phone},
+    public User getUserByPhone(String mail){
+        List<User> list = jdbcTemplate.query("select * from users where mail=?",
+                new Object[]{mail},
                 new BeanPropertyRowMapper<>(User.class));
         return list.size()==0?null:list.get(0);
     }
 
-    public List<String> getUserPermission(String phone){
+    public List<String> getUserPermission(String mail){
         String sql = "select * from permission where id in (\n" +
                 "  select permissionId from role_permission where roleId in (\n" +
                 "      select roleId from user_role where userId in (\n" +
-                "          select id from users where phonenum=?\n" +
+                "          select id from users where mail=?\n" +
                 "      )\n" +
                 "  )\n" +
                 ")";
         List<Permission> list = jdbcTemplate.query(sql,
-                new Object[]{phone},
+                new Object[]{mail},
                 new BeanPropertyRowMapper<>(Permission.class));
         List<String> res = new ArrayList<>(list.size());
         for (Permission permission : list) {

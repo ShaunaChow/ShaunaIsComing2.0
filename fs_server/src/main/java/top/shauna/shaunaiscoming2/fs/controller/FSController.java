@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,6 +36,7 @@ public class FSController {
     private ShaunaDfsService shaunaDfsService;
 
     @GetMapping("/download")
+    @PreAuthorize("hasAnyAuthority('1','2')")
     public ResponseEntity<byte[]> download(String filePath, String id, String clazz){
         /** Cache待添加 **/
         String path = "/"+clazz+"/"+id+"/"+filePath;
@@ -50,6 +52,7 @@ public class FSController {
     }
 
     @PostMapping("/upload")
+    @PreAuthorize("hasAnyAuthority('1','2')")
     public String upload(HttpSession session, MultipartFile file, String filePath){
         try {
             String path = "/"+session.getAttribute("clazz")+"/"+session.getAttribute("id")+"/"+filePath;
@@ -86,6 +89,7 @@ public class FSController {
 
     @RequestMapping("/rmfiletmp")
     @ResponseBody
+    @PreAuthorize("hasAnyAuthority('1','2')")
     public String rmFile(String filePath,HttpSession session){
 
         String path = getPath(filePath,session);
@@ -99,6 +103,7 @@ public class FSController {
 
     @RequestMapping("/rmdirtmp")
     @ResponseBody
+    @PreAuthorize("hasAnyAuthority('1','2')")
     public String rmDir(String filePath, HttpSession session){
         String path = getPath(filePath,session);
 
@@ -111,6 +116,7 @@ public class FSController {
 
     @RequestMapping("/mkdirtmp")
     @ResponseBody
+    @PreAuthorize("hasAnyAuthority('1','2')")
     public String mkDir(String filePath, HttpSession session){
         String path = getPath(filePath,session);
 
@@ -123,6 +129,7 @@ public class FSController {
 
     @PostMapping("/uploadtmp")
     @ResponseBody
+    @PreAuthorize("hasAnyAuthority('1','2')")
     public String uploadTmp(MultipartFile file, String filePath, HttpSession session){
         try {
             String path = getPath(filePath,session);
@@ -146,6 +153,7 @@ public class FSController {
 
     @GetMapping("/getDir")
     @ResponseBody
+    @PreAuthorize("hasAnyAuthority('1','2')")
     public MessageBean getDir(String path, HttpSession session){
         try{
             path = getPath(path,session);

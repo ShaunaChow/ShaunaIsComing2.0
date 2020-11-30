@@ -38,3 +38,19 @@ zuul:
       serviceId: Primary-server
       path: /primary/**
   sensitive-headers:
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 10000
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000

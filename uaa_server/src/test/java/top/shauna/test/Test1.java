@@ -10,7 +10,7 @@ import org.springframework.security.crypto.bcrypt.BCrypt;
  */
 public class Test1 {
     public static void main(String[] args) {
-        String hashpw = BCrypt.hashpw("zxf1023778132", BCrypt.gensalt());
+        String hashpw = BCrypt.hashpw("LTR2004110", BCrypt.gensalt());
         System.out.println(hashpw);
     }
 

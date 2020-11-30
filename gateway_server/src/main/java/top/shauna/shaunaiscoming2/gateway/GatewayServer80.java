@@ -17,8 +17,8 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableZuulProxy
 @EnableFeignClients(basePackages = {"top.shauna.shaunaiscoming2"})
 @ComponentScan("top.shauna.shaunaiscoming2")
-public class GatewayServer28000 {
+public class GatewayServer80 {
     public static void main(String[] args) {
-        SpringApplication.run(GatewayServer28000.class,args);
+        SpringApplication.run(GatewayServer80.class,args);
     }
 }

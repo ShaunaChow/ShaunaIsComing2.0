@@ -108,12 +108,12 @@
 }
 
 .content .right .items .dir {
-    background-image: url(/imgs/dir.png);
+    background-image: url(/primary/imgs/dir.png);
 }
 
 .content .right .items .file {
     position: relative;
-    background-image: url(/imgs/file.png);
+    background-image: url(/primary/imgs/file.png);
 }
 
 .content .right .items .name {

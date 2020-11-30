@@ -15,9 +15,13 @@
     <div class="regist w">
         <div class="error" th:text="${msg}"></div>
         <form action="/regist/registServlet" method="POST">
-            <span style="color: red;">* </span><span>大陆手机号</span><input type="text" id="name" name="phone"> <br><span class="promt0">手机号格式不正确</span>
-            <span style="color: red;">* </span><span>密码</span><input type="password" id="passwd" name="psw"><br><span class="promt1">密码太短</span>
-            <span style="color: red;">* </span><span>确认密码</span><input type="password" id="passwd"><br><span class="promt2">密码不一致</span>
+            <span style="color: red;">* </span><span>邮箱</span><input type="text" id="name" name="mail"> <br><span class="promt0">邮箱格式不正确哦</span>
+            <span style="color: red;">* </span><span>密码</span><input type="password" class="passwd" name="psw"><br><span class="promt1">密码太短</span>
+            <span style="color: red;">* </span><span>确认密码</span><input type="password" class="passwd"><br><span class="promt2">密码不一致</span>
+            <span style="color: red;">* </span><span>验证码</span>
+            <button class="getCode">点击获取验证码</button>
+            <input type="text" id="validationCode" name="validationCode">
+            <br><span class="promt3">验证码为6位</span>
             <input type="submit" value="注测" class="submit">
         </form>
         <div></div>

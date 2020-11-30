@@ -17,11 +17,11 @@ public interface UsersRepository extends JpaRepository<User,Integer> {
     @Transactional
     @Modifying
     @Query(value = "insert into users " +
-            "(phonenum, password, name, home, registdata, type) " +
+            "(mail, password, name, home, registdata, type) " +
             "values " +
             "(?1,?2,?3,?4,?5,?6)",nativeQuery = true)
-    int addUser(String phonenum, String password, String name, String home, Date registdata, Integer type);
+    int addUser(String mail, String password, String name, String home, Date registdata, Integer type);
 
-    User findByPhonenum(String phonenum);
+    User findByMail(String mail);
 
 }

@@ -12,7 +12,15 @@ spring:
     username: root
     password: zxf1023778132
     driver-class-name: com.mysql.jdbc.Driver
-
+  mail:
+    username: 1023778132@qq.com
+    password: xourbejofytnbdbf
+    host: smtp.qq.com
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
 
 eureka:
   client:
@@ -21,4 +29,5 @@ eureka:
   instance:
     instance-id: Regist-server
     prefer-ip-address: true
+
 
