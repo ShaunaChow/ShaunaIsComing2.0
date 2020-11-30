@@ -3,8 +3,6 @@ var animateX = function(obj,tar,vel,fun){
     clearInterval(obj.timer);
     obj.timer = setInterval(function(){
         pos = obj.offsetLeft;
-        console.log(pos);
-        
         if(pos!=tar){
             var step = (tar-pos) / 10;
             step = step>0?Math.ceil(step):Math.floor(step);
@@ -14,7 +12,7 @@ var animateX = function(obj,tar,vel,fun){
             fun && fun();
         }
     },vel);
-}
+};
 
 var animateY = function(tar,vel,fun){
     var pos = window.pageYOffset;
@@ -29,4 +27,4 @@ var animateY = function(tar,vel,fun){
             fun && fun();
         }
     },vel);
-}
+};

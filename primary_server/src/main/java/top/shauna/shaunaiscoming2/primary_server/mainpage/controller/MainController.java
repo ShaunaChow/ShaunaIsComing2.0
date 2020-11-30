@@ -1,7 +1,11 @@
 package top.shauna.shaunaiscoming2.primary_server.mainpage.controller;
 
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @Author Shauna.Chow
@@ -12,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MainController {
 
     @RequestMapping("/")
-    public String main(){
+    public String main(HttpServletRequest request){
         return "index";
     }
 
@@ -34,6 +38,15 @@ public class MainController {
     @RequestMapping("/info/myinfo.html")
     public String myInfo(){
         return "info/myinfo";
+    }
+
+    @RequestMapping("/success.html")
+    public String success(){
+        return "success";
+    }
+    @RequestMapping("/error.html")
+    public String error(){
+        return "error";
     }
 
     @RequestMapping("/test")

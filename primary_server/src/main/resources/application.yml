@@ -2,12 +2,12 @@ server:
   port: 28000
 spring:
   application:
-    name: Primary_server
+    name: Primary-server
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:28001/eureka/
   instance:
-    instance-id: Primary_server
+    instance-id: Primary-server
     prefer-ip-address: true

@@ -2,7 +2,7 @@ server:
   port: 28003
 spring:
   application:
-    name: Regist_server
+    name: Regist-server
   jpa:
     hibernate:
       ddl-auto: validate
@@ -19,6 +19,6 @@ eureka:
     service-url:
       defaultZone: http://localhost:28001/eureka/
   instance:
-    instance-id: Regist_server
+    instance-id: Regist-server
     prefer-ip-address: true
 

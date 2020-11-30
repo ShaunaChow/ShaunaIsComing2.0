@@ -3,7 +3,9 @@ var items = document.querySelector('.items');
 
 function createXMLHttpRequest() {
     try{
-        return new XMLHttpRequest();
+        var request = new XMLHttpRequest();
+        request.setRequestHeader('Authorization','bearer '+sessionStorage.getItem('shauna-token'));
+        return request;
     }catch (e) {
         try{
             return new ActiveXObject('Msxml2.XMLHTTP');

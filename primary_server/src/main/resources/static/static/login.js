@@ -1,3 +1,15 @@
+function createXMLHttpRequest() {
+    try{
+        return new XMLHttpRequest();
+    }catch (e) {
+        try{
+            return new ActiveXObject('Msxml2.XMLHTTP');
+        }catch (e2) {
+            throw e2;
+        }
+    }
+}
+
 //导航栏设置
 var shows = document.querySelectorAll(".nav>ul>li");
 
@@ -27,8 +39,6 @@ phoneNum.addEventListener("blur",function(){
     }
 });
 
-
-
 but.addEventListener("click",function(e){
     var text2 = phoneNum.value;
     if(isNaN(text2)||text2.length!=11){
@@ -36,3 +46,31 @@ but.addEventListener("click",function(e){
         e.preventDefault()
     }
 });
+
+var submit = document.querySelector('.submit');
+var phone = document.querySelector('.phone');
+var password = document.querySelector('.password');
+var error = document.querySelector('.error');
+
+
+submit.addEventListener("click",function (e) {
+    e.preventDefault();
+    var phoneNum = phone.value;
+    var psw = password.value;
+    var request = createXMLHttpRequest();
+    request.open('POST','/uaa/oauth/token', true);
+    request.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    request.onreadystatechange = function () {
+        if (request.readyState == 4 && request.status == 200) {
+            var text = request.responseText;
+            var res = JSON.parse(text);
+            if (res.access_token) {
+                sessionStorage.setItem("shauna-token",res.access_token);
+                window.location.href = '/primary/success.html';
+            }
+        }else if(request.status == 400){
+            error.innerHTML = '账号或密码错误';
+        }
+    };
+    request.send("client_id=c1&client_secret=123&grant_type=password&username="+phoneNum+"&password="+psw);
+})

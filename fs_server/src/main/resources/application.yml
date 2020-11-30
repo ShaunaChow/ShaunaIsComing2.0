@@ -2,13 +2,13 @@ server:
   port: 28005
 spring:
   application:
-    name: FS_server
+    name: FS-server
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:28001/eureka/
   instance:
-    instance-id: FS_server
+    instance-id: FS-server
     prefer-ip-address: true
 
