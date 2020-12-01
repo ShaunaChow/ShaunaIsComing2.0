@@ -15,9 +15,9 @@ import org.springframework.web.multipart.MultipartFile;
 import top.shauna.shaunaiscoming2.common.bean.INodeBean;
 import top.shauna.shaunaiscoming2.common.bean.MessageBean;
 import top.shauna.shaunaiscoming2.common.bean.User;
-import top.shauna.shaunaiscoming2.fs.service.ShaunaDfsService;
 import top.shauna.dfs.kingmanager.bean.INode;
 import top.shauna.dfs.kingmanager.bean.INodeDirectory;
+import top.shauna.shaunaiscoming2.common.service.ShaunaDfsService;
 
 import javax.servlet.http.HttpSession;
 import java.io.IOException;

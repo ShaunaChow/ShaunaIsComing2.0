@@ -16,8 +16,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EntityScan(basePackages={"top.shauna.shaunaiscoming2.common.bean"})
 @ComponentScan(basePackages={
         "top.shauna.shaunaiscoming2.regist",
-        "top.shauna.shaunaiscoming2.fs.dao",
-        "top.shauna.shaunaiscoming2.fs.service",
+        "top.shauna.shaunaiscoming2.common"
 })
 public class RegistServer28003 {
     public static void main(String[] args) {

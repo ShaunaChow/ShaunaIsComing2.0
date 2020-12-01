@@ -1,10 +1,10 @@
-package top.shauna.shaunaiscoming2.fs.service.impl;
+package top.shauna.shaunaiscoming2.common.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import top.shauna.dfs.kingmanager.bean.INodeDirectory;
-import top.shauna.shaunaiscoming2.fs.dao.ShaunaDfsDao;
-import top.shauna.shaunaiscoming2.fs.service.ShaunaDfsService;
+import top.shauna.shaunaiscoming2.common.dao.ShaunaDfsDao;
+import top.shauna.shaunaiscoming2.common.service.ShaunaDfsService;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

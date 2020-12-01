@@ -1,4 +1,4 @@
-package top.shauna.shaunaiscoming2.fs.service;
+package top.shauna.shaunaiscoming2.common.dao;
 
 import top.shauna.dfs.kingmanager.bean.INodeDirectory;
 
@@ -7,10 +7,10 @@ import java.nio.ByteBuffer;
 
 /**
  * @Author Shauna.Chou
- * @Date 2020/11/2 15:37
+ * @Date 2020/11/2 15:28
  * @E-Mail z1023778132@icloud.com
  */
-public interface ShaunaDfsService {
+public interface ShaunaDfsDao {
     boolean uploadFile(String filePath, byte[] data) throws IOException;
 
     ByteBuffer downloadFile(String filePath);

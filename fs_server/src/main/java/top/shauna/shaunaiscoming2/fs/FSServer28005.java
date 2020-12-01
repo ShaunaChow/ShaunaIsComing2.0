@@ -3,6 +3,7 @@ package top.shauna.shaunaiscoming2.fs;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @Author Shauna.Chow
@@ -11,6 +12,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 @SpringBootApplication
 @EnableEurekaClient
+@ComponentScan(basePackages={
+        "top.shauna.shaunaiscoming2.fs",
+        "top.shauna.shaunaiscoming2.common"
+})
 public class FSServer28005 {
     public static void main(String[] args) {
         SpringApplication.run(FSServer28005.class,args);

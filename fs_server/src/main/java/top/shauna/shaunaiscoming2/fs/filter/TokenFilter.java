@@ -23,15 +23,22 @@ public class TokenFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
         HttpSession session = httpServletRequest.getSession();
         String header = httpServletRequest.getHeader("json-token");
-        Map<String,Object> map = JSON.parseObject(header, Map.class);
-        String principal = (String) map.get("principal");
-        User user = JSON.parseObject(principal, User.class);
-        if (session.getAttribute("user")==null){
-            session.setAttribute("user",user);
-        }else{
-            User user1 = (User) session.getAttribute("user");
-            if (!user1.getMail().equals(user.getMail())){
-                session.setAttribute("user",user);
+        if (header==null){
+            if(session.getAttribute("user")==null) {
+                httpServletResponse.sendRedirect("http://www.shauna.top/primary/login/login.html?msg=pleaseLogin");
+                return;
+            }
+        }else {
+            Map<String, Object> map = JSON.parseObject(header, Map.class);
+            String principal = (String) map.get("principal");
+            User user = JSON.parseObject(principal, User.class);
+            if (session.getAttribute("user") == null) {
+                session.setAttribute("user", user);
+            } else {
+                User user1 = (User) session.getAttribute("user");
+                if (!user1.getMail().equals(user.getMail())) {
+                    session.setAttribute("user", user);
+                }
             }
         }
         //放行

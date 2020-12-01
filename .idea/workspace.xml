@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c125f14-95f3-4017-b1c9-665fbfa09275" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fs_server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway_server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_server/src/main/java/top/shauna/shaunaiscoming2/login/LoginServer28004.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/primary_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/primary_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/FSServer28005.java" beforeDir="false" afterPath="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/FSServer28005.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/controller/FSController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/controller/FSController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/dao/ShaunaDfsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/dao/ShaunaDfsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/dao/impl/ShaunaDfsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/dao/impl/ShaunaDfsDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/filter/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/filter/TokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/service/ShaunaDfsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/service/ShaunaDfsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/service/impl/ShaunaDfsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/service/impl/ShaunaDfsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway_server/src/main/java/top/shauna/shaunaiscoming2/gateway/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway_server/src/main/java/top/shauna/shaunaiscoming2/gateway/filter/AuthFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regist_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/regist_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/RegistServer28003.java" beforeDir="false" afterPath="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/RegistServer28003.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/controller/RegistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/controller/RegistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry_eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/registry_eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uaa_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/uaa_server/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,20 +49,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway_server/pom.xml">
+      <file leaf-file-name="RegistController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/controller/RegistController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+            <state relative-caret-position="381">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/controller/RegistController.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/regist_server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="44" />
+              <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fs_server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="40" selection-start-line="40" selection-end-line="47" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistTokenConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/config/RegistTokenConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common_server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TokenFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/filter/TokenFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="repository.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/primary_server/src/main/resources/static/static/repository.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="261" column="32" lean-forward="true" selection-start-line="261" selection-start-column="32" selection-end-line="261" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/primary_server/src/main/resources/static/static/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="93" column="39" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway_server/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway_server/src/main/java/top/shauna/shaunaiscoming2/gateway/filter/AuthFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -90,14 +166,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/primary_server/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/primary_server/src/main/resources/static/static/animate.js" />
-        <option value="$PROJECT_DIR$/primary_server/src/main/resources/static/static/index.js" />
-        <option value="$PROJECT_DIR$/primary_server/src/main/resources/templates/info/myinfo.html" />
-        <option value="$PROJECT_DIR$/primary_server/src/main/resources/templates/repository/repository.html" />
         <option value="$PROJECT_DIR$/primary_server/src/main/java/top/shauna/shaunaiscoming2/primary_server/mainpage/controller/MainController.java" />
         <option value="$PROJECT_DIR$/gateway_server/src/main/java/top/shauna/shaunaiscoming2/gateway/config/ZuulConfig.java" />
-        <option value="$PROJECT_DIR$/gateway_server/src/main/java/top/shauna/shaunaiscoming2/gateway/filter/AuthFilter.java" />
         <option value="$PROJECT_DIR$/primary_server/src/main/java/top/shauna/shaunaiscoming2/primary_server/filter/TokenFilter.java" />
         <option value="$PROJECT_DIR$/primary_server/src/main/resources/static/test/js1.html" />
         <option value="$PROJECT_DIR$/gateway_server/src/main/java/top/shauna/shaunaiscoming2/gateway/tokenextractor/ShaunaTokenExtractor.java" />
@@ -116,8 +186,6 @@
         <option value="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/config/TokenConfig.java" />
         <option value="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/config/ResourceServerConfig.java" />
         <option value="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/config/RegistResourceServerConfig.java" />
-        <option value="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/RegistServer28003.java" />
-        <option value="$PROJECT_DIR$/gateway_server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/primary_server/src/main/resources/static/static/regist.css" />
         <option value="$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/bean/User.java" />
         <option value="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/repository/UsersRepository.java" />
@@ -128,19 +196,27 @@
         <option value="$PROJECT_DIR$/primary_server/src/main/resources/static/static/regist.js" />
         <option value="$PROJECT_DIR$/uaa_server/src/test/java/top/shauna/test/Test1.java" />
         <option value="$PROJECT_DIR$/scripts/db.sql" />
-        <option value="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/filter/TokenFilter.java" />
-        <option value="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/controller/FSController.java" />
         <option value="$PROJECT_DIR$/gateway_server/src/main/java/top/shauna/shaunaiscoming2/gateway/config/ResourceServerConfig.java" />
         <option value="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/service/RegistService.java" />
         <option value="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/dao/RegistDao.java" />
         <option value="$PROJECT_DIR$/uaa_server/pom.xml" />
         <option value="$PROJECT_DIR$/registry_eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/regist_server/pom.xml" />
         <option value="$PROJECT_DIR$/primary_server/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/gateway_server/pom.xml" />
         <option value="$PROJECT_DIR$/fs_server/pom.xml" />
+        <option value="$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/dao/ShaunaDfsDao.java" />
+        <option value="$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/service/ShaunaDfsService.java" />
+        <option value="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/controller/FSController.java" />
+        <option value="$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/service/impl/ShaunaDfsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/dao/impl/ShaunaDfsDaoImpl.java" />
+        <option value="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/RegistServer28003.java" />
+        <option value="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/FSServer28005.java" />
         <option value="$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/controller/RegistController.java" />
+        <option value="$PROJECT_DIR$/regist_server/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway_server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/gateway_server/src/main/java/top/shauna/shaunaiscoming2/gateway/filter/AuthFilter.java" />
+        <option value="$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/filter/TokenFilter.java" />
       </list>
     </option>
   </component>
@@ -212,9 +288,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,7 +387,48 @@
               <item name="shauna" type="462c0819:PsiDirectoryNode" />
               <item name="shaunaiscoming2" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShaunaIsComing2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShaunaIsComing2" type="462c0819:PsiDirectoryNode" />
+              <item name="common_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+              <item name="shauna" type="462c0819:PsiDirectoryNode" />
+              <item name="shaunaiscoming2" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShaunaIsComing2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShaunaIsComing2" type="462c0819:PsiDirectoryNode" />
+              <item name="common_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+              <item name="shauna" type="462c0819:PsiDirectoryNode" />
+              <item name="shaunaiscoming2" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShaunaIsComing2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShaunaIsComing2" type="462c0819:PsiDirectoryNode" />
+              <item name="common_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+              <item name="shauna" type="462c0819:PsiDirectoryNode" />
+              <item name="shaunaiscoming2" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShaunaIsComing2" type="b2602c69:ProjectViewProjectNode" />
@@ -421,61 +535,7 @@
               <item name="shauna" type="462c0819:PsiDirectoryNode" />
               <item name="shaunaiscoming2" type="462c0819:PsiDirectoryNode" />
               <item name="fs" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShaunaIsComing2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShaunaIsComing2" type="462c0819:PsiDirectoryNode" />
-              <item name="fs_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="shauna" type="462c0819:PsiDirectoryNode" />
-              <item name="shaunaiscoming2" type="462c0819:PsiDirectoryNode" />
-              <item name="fs" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShaunaIsComing2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShaunaIsComing2" type="462c0819:PsiDirectoryNode" />
-              <item name="fs_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="shauna" type="462c0819:PsiDirectoryNode" />
-              <item name="shaunaiscoming2" type="462c0819:PsiDirectoryNode" />
-              <item name="fs" type="462c0819:PsiDirectoryNode" />
               <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShaunaIsComing2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShaunaIsComing2" type="462c0819:PsiDirectoryNode" />
-              <item name="fs_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="shauna" type="462c0819:PsiDirectoryNode" />
-              <item name="shaunaiscoming2" type="462c0819:PsiDirectoryNode" />
-              <item name="fs" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShaunaIsComing2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShaunaIsComing2" type="462c0819:PsiDirectoryNode" />
-              <item name="fs_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="shauna" type="462c0819:PsiDirectoryNode" />
-              <item name="shaunaiscoming2" type="462c0819:PsiDirectoryNode" />
-              <item name="fs" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShaunaIsComing2" type="b2602c69:ProjectViewProjectNode" />
@@ -1277,6 +1337,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1297,9 +1360,12 @@
     <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\JAVA项目\ShaunaIsComing2\uaa_server\src\main\resources\template" />
-      <recent name="E:\JAVA项目\ShaunaIsComing2\uaa_server\src\main\resources\static" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JAVA项目\ShaunaIsComing2\common_server\src\main\java\top\shauna\shaunaiscoming2\common" />
+      <recent name="E:\JAVA项目\ShaunaIsComing2" />
+      <recent name="E:\JAVA项目\ShaunaIsComing2\regist_server\src\main\java\top\shauna\shaunaiscoming2\regist" />
+      <recent name="E:\JAVA项目\ShaunaIsComing2\fs_server\src\main\java\top\shauna\shaunaiscoming2\fs" />
+      <recent name="E:\JAVA项目\ShaunaIsComing2\primary_server\src\main\java\top\shauna\shaunaiscoming2\primary_server\config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="top.shauna.shaunaiscoming2.regist.config" />
@@ -1308,12 +1374,9 @@
       <recent name="top.shauna.shaunaiscoming2.gateway.filter" />
       <recent name="top.shauna.shaunaiscoming2.gateway.config" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\JAVA项目\ShaunaIsComing2" />
-      <recent name="E:\JAVA项目\ShaunaIsComing2\regist_server\src\main\java\top\shauna\shaunaiscoming2\regist" />
-      <recent name="E:\JAVA项目\ShaunaIsComing2\fs_server\src\main\java\top\shauna\shaunaiscoming2\fs" />
-      <recent name="E:\JAVA项目\ShaunaIsComing2\primary_server\src\main\java\top\shauna\shaunaiscoming2\primary_server\config" />
-      <recent name="E:\JAVA项目\ShaunaIsComing2\gateway_server\src\main\java\top\shauna\shaunaiscoming2\gateway\config" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\JAVA项目\ShaunaIsComing2\uaa_server\src\main\resources\template" />
+      <recent name="E:\JAVA项目\ShaunaIsComing2\uaa_server\src\main\resources\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1453,21 +1516,21 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.UAAServer28002" />
+      <item itemvalue="Spring Boot.EurekaServer28001" />
+      <item itemvalue="Spring Boot.FSServer28005" />
       <item itemvalue="Spring Boot.PrimaryServer28000" />
       <item itemvalue="JUnit.MailTest.test" />
       <item itemvalue="Spring Boot.RegistServer28003" />
       <item itemvalue="Application.Test1" />
       <item itemvalue="Spring Boot.GatewayServer80" />
-      <item itemvalue="Spring Boot.UAAServer28002" />
-      <item itemvalue="Spring Boot.EurekaServer28001" />
-      <item itemvalue="Spring Boot.FSServer28005" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.RegistServer28003" />
         <item itemvalue="Spring Boot.GatewayServer80" />
-        <item itemvalue="Application.Test1" />
+        <item itemvalue="Spring Boot.RegistServer28003" />
         <item itemvalue="Spring Boot.PrimaryServer28000" />
+        <item itemvalue="Application.Test1" />
         <item itemvalue="JUnit.MailTest.test" />
       </list>
     </recent_temporary>
@@ -1487,7 +1550,8 @@
       <workItem from="1606446310438" duration="20268000" />
       <workItem from="1606633180050" duration="3666000" />
       <workItem from="1606636857696" duration="14872000" />
-      <workItem from="1606701680004" duration="27072000" />
+      <workItem from="1606701680004" duration="27518000" />
+      <workItem from="1606808664344" duration="4115000" />
     </task>
     <servers />
   </component>
@@ -1524,7 +1588,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78149000" />
+    <option name="totallyTimeSpent" value="82710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1532,7 +1596,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.29424307" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.20522387" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -1547,23 +1611,23 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run Dashboard" order="8" weight="0.3304253" />
+      <window_info anchor="bottom" id="Run Dashboard" order="8" visible="true" weight="0.24972737" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32279173" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35550708" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3217012" />
-      <window_info anchor="bottom" id="Database Console" weight="0.33478734" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20735608" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.20283534" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20948827" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.28244275" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="9" weight="0.33478734" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.28244275" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1578,57 +1642,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/regist_server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/regist_server/src/test/java/top/shauna/test/MailTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/primary_server/src/main/resources/templates/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/primary_server/src/main/resources/static/test/test2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3000">
-          <caret line="120" column="27" selection-start-line="120" selection-start-column="14" selection-end-line="120" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/primary_server/src/main/resources/static/test/test1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="176" column="40" lean-forward="true" selection-start-line="176" selection-start-column="40" selection-end-line="176" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/primary_server/src/main/resources/static/static/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway_server/src/main/java/top/shauna/shaunaiscoming2/gateway/config/ZuulConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="55" lean-forward="true" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gateway_server/src/main/java/top/shauna/shaunaiscoming2/gateway/config/TokenConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1636,13 +1649,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/config/ZuulConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/config/ZuulConfig.java" />
     <entry file="file://$PROJECT_DIR$/primary_server/src/main/java/top/shauna/shaunaiscoming2/primary_server/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -1653,13 +1660,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/config/WebSecurityConfig.java" />
     <entry file="file://$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/service/impl/ShaunaDfsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1671,13 +1672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/RegistServer28003.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1737,10 +1731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="17" column="137" selection-start-line="17" selection-start-column="129" selection-end-line="17" selection-end-column="137" />
-          <folding>
-            <element signature="n#style#0;n#span#6;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#9;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1772,13 +1762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/config/RegistTokenConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uaa_server/src/main/java/top/shauna/shaunaiscoming2/uaa/UAAServer28002.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1793,22 +1776,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/primary_server/src/main/resources/static/static/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="75" column="46" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/primary_server/src/main/resources/static/static/regist.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="83" column="15" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="15" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/58863a11-38d5-4a5e-bb99-5aca33e30aa8/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/uaa_server/src/test/java/top/shauna/test/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1824,48 +1797,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/primary_server/src/main/resources/static/static/repository.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/filter/TokenFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/controller/FSController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="158" column="41" selection-start-line="158" selection-start-column="41" selection-end-line="158" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/FSServer28005.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gateway_server/src/main/java/top/shauna/shaunaiscoming2/gateway/GatewayServer80.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway_server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1926,20 +1861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/regist_server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="59" column="3" selection-start-line="59" selection-start-column="3" selection-end-line="77" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/primary_server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -1947,24 +1868,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fs_server/pom.xml">
+    <entry file="file://$PROJECT_DIR$/gateway_server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+        <state relative-caret-position="1750">
+          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway_server/pom.xml">
+    <entry file="file://$PROJECT_DIR$/fs_server/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+        <state relative-caret-position="175">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="76" column="51" lean-forward="true" selection-start-line="76" selection-start-column="51" selection-end-line="76" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/controller/FSController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-325">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/service/ShaunaDfsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/service/impl/ShaunaDfsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/dao/ShaunaDfsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_server/src/main/java/top/shauna/shaunaiscoming2/common/dao/impl/ShaunaDfsDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/RegistServer28003.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" selection-start-line="16" selection-end-line="19" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/FSServer28005.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/controller/RegistController.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fs_server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="40" selection-start-line="40" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regist_server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="44" />
+          <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regist_server/src/main/java/top/shauna/shaunaiscoming2/regist/config/RegistTokenConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway_server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway_server/src/main/java/top/shauna/shaunaiscoming2/gateway/filter/AuthFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Maven/apache-maven-3.5.4/reposity/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar!/org/apache/tomcat/util/threads/TaskThread.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/primary_server/src/main/resources/static/static/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="93" column="39" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fs_server/src/main/java/top/shauna/shaunaiscoming2/fs/filter/TokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/primary_server/src/main/resources/static/static/repository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="261" column="32" lean-forward="true" selection-start-line="261" selection-start-column="32" selection-end-line="261" selection-end-column="32" />
         </state>
       </provider>
     </entry>

@@ -50,8 +50,6 @@ public class AuthFilter extends ZuulFilter {
         Authentication userAuthentication = oAuth2Authentication.getUserAuthentication();
         String principal = userAuthentication.getName();
 
-        System.out.println(principal);
-
         //去除用户权限
         List<String> authorities = new ArrayList<>();
         userAuthentication.getAuthorities().stream().forEach(o->authorities.add(((GrantedAuthority) o).getAuthority()));
@@ -67,8 +65,6 @@ public class AuthFilter extends ZuulFilter {
             jsonToken.put("principal",principal);
             jsonToken.put("authorities",authorities);
         }
-
-        System.out.println(JSON.toJSONString(jsonToken));
 
         //把封装好的map转为json放入header中
         ctx.addZuulRequestHeader("json-token", JSON.toJSONString(jsonToken));

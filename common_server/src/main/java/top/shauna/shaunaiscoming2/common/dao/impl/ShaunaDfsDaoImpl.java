@@ -1,4 +1,4 @@
-package top.shauna.shaunaiscoming2.fs.dao.impl;
+package top.shauna.shaunaiscoming2.common.dao.impl;
 
 import org.springframework.stereotype.Component;
 import top.shauna.dfs.ClientStarter;
@@ -7,7 +7,7 @@ import top.shauna.dfs.service.ClientService;
 import top.shauna.rpc.bean.FoundBean;
 import top.shauna.rpc.bean.RegisterBean;
 import top.shauna.rpc.config.PubConfig;
-import top.shauna.shaunaiscoming2.fs.dao.ShaunaDfsDao;
+import top.shauna.shaunaiscoming2.common.dao.ShaunaDfsDao;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

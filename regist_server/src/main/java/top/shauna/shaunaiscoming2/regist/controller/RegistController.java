@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import top.shauna.shaunaiscoming2.common.bean.User;
-import top.shauna.shaunaiscoming2.fs.service.ShaunaDfsService;
+import top.shauna.shaunaiscoming2.common.service.ShaunaDfsService;
 import top.shauna.shaunaiscoming2.regist.repository.UsersRepository;
 import top.shauna.shaunaiscoming2.regist.service.MailService;
 import top.shauna.shaunaiscoming2.regist.service.RegistService;
