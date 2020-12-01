@@ -5,7 +5,7 @@
     <parent>
         <artifactId>ShaunaIsComing2.0</artifactId>
         <groupId>top.shauna</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>2.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -104,7 +104,7 @@
         <dependency>
             <groupId>top.shauna</groupId>
             <artifactId>gateway_server</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>2.0</version>
             <scope>compile</scope>
         </dependency>
 

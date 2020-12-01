@@ -1,0 +1,33 @@
+server:
+  port: 28003
+spring:
+  application:
+    name: Regist-server
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://39.105.89.185:3306/ShaunaIsComing
+    username: root
+    password: zxf1023778132
+    driver-class-name: com.mysql.jdbc.Driver
+  mail:
+    username: 1023778132@qq.com
+    password: xourbejofytnbdbf
+    host: smtp.qq.com
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:28001/eureka/
+  instance:
+    instance-id: Regist-server
+    prefer-ip-address: true
+
+
