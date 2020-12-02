@@ -1,7 +1,7 @@
 check();
 
-var currentURL = '/';
-var items = document.querySelector('.items');
+var currentURL;
+var items;
 
 function createXMLHttpRequest() {
     try{
@@ -265,6 +265,11 @@ function check(){
     }
 }
 
-window.addEventListener('load',check);
+function init(){
+    currentURL = '/';
+    items = document.querySelector('.items');
+}
+
+window.addEventListener('load',init);
 window.addEventListener('load',freshItems);
 window.addEventListener('load',basic);
