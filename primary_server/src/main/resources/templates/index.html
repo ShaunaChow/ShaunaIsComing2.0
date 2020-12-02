@@ -10,6 +10,9 @@
 <body>
     <!-- 头部区域 -->
     <div class="head" th:fragment="header">
+        <link rel="stylesheet" href="/primary/static/index.css">
+        <script src="/primary/static/animate.js"></script>
+        <script src="/primary/static/index.js"></script>
         <div class="header w">
             <!-- logo部分 -->
             <div class="logo">
@@ -62,7 +65,7 @@
             <div class="user">
                 <a href="/primary/login/login.html">请登录</a>
             </div>
-            <div class="user">
+            <div class="userinfo">
                 <a href="/primary/info/myinfo.html">我的信息</a>
             </div>
         </div>
@@ -298,9 +301,6 @@
                 </dl>
             </div>
         </div>
-        <link rel="stylesheet" href="/primary/static/index.css">
-        <script src="/primary/static/animate.js"></script>
-        <script src="/primary/static/index.js"></script>
     </div>
 </body>
 

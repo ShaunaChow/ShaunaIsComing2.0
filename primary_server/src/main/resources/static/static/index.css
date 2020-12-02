@@ -137,13 +137,25 @@ a {
     margin-left: 30px;
 }
 
+.userinfo {
+    display: none;
+    float: left;
+    height: 42px;
+    margin-left: 30px;
+}
+
+.userinfo a {
+    height: 42px;
+    line-height: 42px;
+    color: #272626;
+}
+
 .user a {
     height: 42px;
     line-height: 42px;
     color: #272626;
 }
 
-/* ������� */
 .banner {
     background-color: rgb(28, 118, 253);
     height: 521px;

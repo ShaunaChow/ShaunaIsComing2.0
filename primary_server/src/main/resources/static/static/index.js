@@ -81,18 +81,17 @@ function start() {
                 toshow.style.display = "none";
             }
         }
-
     }
 
-    var users = document.querySelectorAll(".user");
+    var users = document.querySelector(".user");
+    var userinfo = document.querySelector(".userinfo");
     if(sessionStorage.getItem("shauna-token")){
-        users[0].style.display = "none";
-        users[1].style.display = "block";
+        users.style.display = "none";
+        userinfo.style.display = "block";
     }else {
-        users[1].style.display = "none";
-        users[0].style.display = "block";
+        userinfo.style.display = "none";
+        users.style.display = "block";
     }
-    console.log(users[0].style.display+"  "+users[1].style.display)
 }
 
 window.addEventListener('load',start);

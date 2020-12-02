@@ -1,3 +1,5 @@
+check();
+
 var currentURL = '/';
 var items = document.querySelector('.items');
 
