@@ -16,6 +16,9 @@ eureka:
   instance:
     instance-id: Gateway-server
     prefer-ip-address: true
+    ip-address: 106.52.31.207
+
+        #ip-address: 106.52.31.207把这个服务部署在腾讯云上！
 
 zuul:
   routes:

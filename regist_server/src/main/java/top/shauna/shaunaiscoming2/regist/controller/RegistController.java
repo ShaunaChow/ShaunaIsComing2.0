@@ -34,8 +34,6 @@ public class RegistController {
     @PostMapping("/registServlet")
     @ResponseBody
     public String regist(String mail, String psw, String validationCode, HttpSession session){
-        System.out.println(mail+" "+psw+" " +validationCode);
-        System.out.println(session.getAttribute("validationCode"));
         if (session.getAttribute("validationCode")==null||!session.getAttribute("validationCode").equals(validationCode)){
             return "validationCodeError";
         }
