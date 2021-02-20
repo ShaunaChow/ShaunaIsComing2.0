@@ -11,6 +11,6 @@ eureka:
   instance:
     instance-id: FS-server
     prefer-ip-address: true
-    ip-address: 39.105.89.185
+    ip-address: 106.13.74.175
 
-#ip-address: 39.105.89.185把这个服务部署在阿里云上！
+#ip-address: 106.13.74.175把这个服务部署在阿里云上！
