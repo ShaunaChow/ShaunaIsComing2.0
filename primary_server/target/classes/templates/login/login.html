@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ch-CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="/primary/static/login.css">
+    <script src="/primary/static/login.js"></script>
+</head>
+
+<body>
+    <div class="head" th:insert="~{index::header}"></div>
+
+    <!-- 注册表单 -->
+    <div class="regist w">
+        <div class="error" th:text="${session.msg}"></div>
+        <form action="/uaa/oauth/token" method="POST">
+            <input type="hidden" name="client_id" value="c1">
+            <input type="hidden" name="client_secret" value="123">
+            <input type="hidden" name="grant_type" value="password">
+            <span style="color: red;">* </span><span>邮箱/手机号</span><input class="phone" type="text" id="name" name="username"> <br><span class="promt0">格式不正确</span>
+            <span style="color: red;">* </span><span>密码</span><input class="password" type="password" id="passwd" name="password"><br>
+            <input type="submit" value="登陆" class="submit">
+            <button disabled  class="regs"><a href="/primary/register/regist.html">立即注册</a></button>
+        </form>
+        <div></div>
+    </div>
+
+    <div class="tail" th:insert="~{index::tailer}"></div>
+</body>
+
+</html>

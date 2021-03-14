@@ -4,7 +4,7 @@ spring:
   application:
     name: Gateway-server
   datasource:
-    url: jdbc:mysql://39.105.89.185:3306/ShaunaIsComing
+    url: jdbc:mysql://8.131.57.153:3306/ShaunaIsComing
     username: root
     password: zxf1023778132
     driver-class-name: com.mysql.jdbc.Driver
