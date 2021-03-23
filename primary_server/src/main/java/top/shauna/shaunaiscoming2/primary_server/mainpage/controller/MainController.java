@@ -25,6 +25,11 @@ public class MainController {
         return "login/login";
     }
 
+    @RequestMapping("/shaunacode/shaunacode.html")
+    public String shaunacode(){
+        return "shaunacode/shaunacode";
+    }
+
     @RequestMapping("/register/regist.html")
     public String regist(){
         return "register/regist";

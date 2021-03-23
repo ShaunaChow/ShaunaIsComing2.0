@@ -13,6 +13,7 @@
         <module name="primary_server" />
         <module name="regist_server" />
         <module name="registry_eureka" />
+        <module name="shaunacode_server" />
         <module name="uaa_server" />
       </profile>
     </annotationProcessing>

@@ -101,4 +101,24 @@ public class ResourceServerConfig {
                     .permitAll();
         }
     }
+
+    //配置针对shaunacode的请求
+    @Configuration
+    @EnableResourceServer
+    public class ShaunaCodeResourceServerConfig extends ResourceServerConfigurerAdapter {
+        @Override
+        public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
+            resources.resourceId(RESOURCE_ID)
+                    .tokenStore(tokenStore)
+                    .stateless(true);
+        }
+
+        @Override
+        public void configure(HttpSecurity http) throws Exception {
+            http
+                    .authorizeRequests()
+                    .antMatchers("/shaunacode/**")
+                    .permitAll();
+        }
+    }
 }

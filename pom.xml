@@ -15,6 +15,7 @@
         <module>fs_server</module>
         <module>gateway_server</module>
         <module>common_server</module>
+        <module>shaunacode_server</module>
     </modules>
     <packaging>pom</packaging>
 

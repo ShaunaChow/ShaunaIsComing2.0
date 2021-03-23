@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ch-CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注测</title>
+    <link rel="stylesheet" href="/primary/static/shaunacode.css">
+</head>
+
+<body>
+    <div th:insert="~{index::header}"></div>
+
+    <!-- 注册表单 -->
+    <div class="code">
+        <div class="left">
+            <div class="input">
+                <h1>输入</h1>
+                <textarea class="inputToSend"></textarea>
+            </div>
+            <div class="output">
+                <h1>输出</h1>
+                <textarea class="outputToShow"></textarea>
+            </div>
+        </div>
+        <div class="right">
+            <div class="coding">
+                <h1>Java8</h1>
+                <textarea class="codeToSend"></textarea>
+            </div>
+            <div class="buts">
+                <button class="run">运行</button>
+            </div>
+        </div>
+    </div>
+
+    <div th:insert="~{index::tailer}"></div>
+
+    <script src="/primary/static/shaunacode.js"></script>
+</body>
+
+</html>

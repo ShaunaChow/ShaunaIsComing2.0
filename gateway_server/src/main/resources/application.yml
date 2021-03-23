@@ -40,6 +40,9 @@ zuul:
     primary2:
       serviceId: Primary-server
       path: /primary/**
+    shaunacode:
+      serviceId: ShaunaCode-server
+      path: /shaunacode/**
   sensitive-headers:
   host:
     connect-timeout-millis: 10000
