@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--2.内款式JS-->
+    <!--<script>-->
+        <!--alert('okkkk2');-->
+    <!--</script>-->
+    <!--3. 外部式-->
+    <!--<script src="test3.js"></script>-->
+    <script>
+        // 4. 三大输入输出
+        var a = prompt("请输入");
+        alert("输出1"+a);
+        console.log("控制台输出");
+
+        // 5. 变量
+        // 用var声明变量
+        var a = 1;
+        var b = 2, c = 3;
+        alert(a+b+c);
+        // 只声明不赋值 则为 undefined
+        var d;
+        alert(d);
+        // 不声明直接复制也可以使用的   会变为全局变量
+
+        // 6. 数据类型
+        //     Number 数字类型 默认为0
+        //             Number.MAX_VALUE
+        //             Number.MIN_VALUE
+        //             Infinity 无穷大
+        //             NaN 是非数值的
+        //                 isNaN() 用来判断是不是数值（true为不是数值）
+        //     Boolean 布尔值类型 默认为false
+        //             true 当1来看
+        //             false 当0
+        //     String 字符串  默认为""
+                    var len = "00".length;
+                    var pingjie = "33"+"22";
+        //     Undefined 未定义类型  默认就是undefined
+        //             undefined+1 为NaN
+        //     Null 空类型  默认为null （ var a = null）
+        //             null+1 = 1
+        // typeof 可以查看类型
+        console.log(typeof len)
+            // null 为Object
+        // 类型转换
+            //转为字符串
+                // toString()\String()\+拼接
+            // 转为数字
+                //parseInt('2')\parseFloat('2.3')\Number()\用-*/可以隐士转换
+            // 转为boolean
+                //Boolean()
+
+        // 7. 运算符
+        //     加减乘除略。。。
+        //     == 会转型
+        //     18 == '18' 为true
+        //     === 为全等 类型和值都要相等
+        //     !== 也是全不等
+
+        // 8. if。。。else。。。
+        //     if(1==2){
+        //
+        //     }else if(3==3){
+        //
+        //     }else{
+        //
+        //     }
+
+        // 9. 三元表达式 用 ?:
+
+        // 10. switch语句(匹配条件是全等)
+        //     var a = 2;
+        //     switch (a) {
+        //         case 1:
+        //             break;
+        //         case 2:
+        //             break;
+        //     }
+
+
+        // 11. 循环： for \ while \ do...while 和java一样的
+
+        // 12. 数组
+            //两种创建空数组
+            var arr = new Array();
+            var arr2 = [1,2,3,'ok',true];
+            //获取元素(越界结果是undefined)
+            console.log(arr2[3]);
+            //获取长度
+            var length = arr2.length;
+            //添加元素(先扩容再赋值  也可以直接赋值的)
+            arr.length ++;
+            console.log(arr.length);
+            arr[0] = 'okkkkkkkkk';
+            console.log(arr);
+            arr[1] = 'llll';
+            console.log(arr);
+            arr.length = 1;
+            console.log(arr);
+
+        // 13. 函数
+        // 如果没有return则返回的是undefined
+        function sum(n1, n2) {
+            return n1+n2;
+        }
+        // 调用时参数个数不需要匹配的
+        console.log(sum(12222,2222,3333));
+        // arguments封装了所有输入参数 是个伪数组
+        function fn() {
+            console.log(arguments);
+        }
+        fn(1,2,3,4)
+        // 第二种声明方式(匿名函数)
+        var func = function () {
+            console.log("okkkksadasfasfas");
+        }
+        func(1,2,3);
+
+        // 14. 作用域
+        // 全局作用域、局部作用域
+        // 注意： 不用var声明的变量也是全局变量
+
+        // 15. 预解析
+        // JS代码分两步：预解析+代码执行
+        //     预解析：
+        //         先变量预解析（只解析声明）、后函数预解析（函数声明提升）！！！
+
+        // 16. 对象
+        //     创建
+        //         用字面量{}
+                        var obj = {
+                            name:'shauna',
+                            age:18,
+                            hi:function () {
+                                console.log('hi')
+                            }
+                        };
+                        obj.hi();
+                        // 调用属性的两种方式
+                        console.log(obj.name);
+                        console.log(obj['name']);
+                    // 利用new Object（）
+                        var obj2 = new Object();
+                        obj2.name = 'mago';
+                        obj2.hi = function () {
+                            console.log('hi');
+                        }
+                    // 利用构造函数
+                        function MyObject(name,hi) {
+                            //必须用this
+                            this.name = name;
+                            this.hi = hi;
+                        }
+                        var obj3 = new MyObject('sophia',function () {
+                            console.log('hiiiii');
+                        });
+                        obj3.hi();
+
+        console.log("=====================================");
+            // 对象遍历
+            //     for in 遍历
+                    for(var k in obj){
+                        console.log(k+"-->"+obj[k]);
+                    }
+
+        // 17. 内置对象
+        //     Math内置对象
+        //         不需要new 直接使用里面的方法和属性
+        //     Date内置对象
+        //         需要通过构造函数创建对象
+                    var now = new Date()
+                    console.log(now);
+                    var date = new Date('2019-10-1')
+                    console.log(date);
+            // 数组对象
+            //     判断是否为数组用 instanceof
+                var arr = [3,2,5,4,6,8,5,32];
+                if (arr instanceof Array) {
+                    console.log("haodi");
+                }
+                // 添加与删除元素
+                // push() 和 pop()
+                // unshift()从前面添加
+                // shift()删除第一个元素
+                // 排序用sort()  反转用reverse()
+                arr.sort(function (a1, b1) {
+                    return a1-b1;
+                })
+                console.log(arr)
+                // 索引用indexOf() 和 lastIndexOf()
+                // 组合成字符串用 join('---')
+
+            // 字符串对象
+                var str = 'andi';
+                console.log(str.length);
+                var o = {
+                    age:18
+                }
+                if(o['age']){//判断o中有没有age属性
+                    console.log(o['age'])
+                }
+
+        // 18. WEB API
+    </script>
+
+    <style>
+
+        .change {
+            background-color: #0050ff;
+        }
+
+    </style>
+</head>
+<body>
+    <!--1.行内式JS-->
+    <input type="button" value="okkk" onclick="alert('okkkk')">
+
+    <div id="2020">2020</div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <div class="box">box</div>
+
+    <div id="okk"></div>
+
+    <button id="ok">okkkkk</button>
+
+    <div id="style">12345</div>
+
+    <div class="father">
+        <div class="son">son</div>
+    </div>
+
+    <ul class="weituo">
+        <li>11</li>
+        <li>22</li>
+        <li>33</li>
+        <li>44</li>
+    </ul>
+
+    <script>
+        // 19. DOM
+        //     19.1 获取页面元素
+        //         （1） 通过id获取
+        // var elementById = document.getElementById('2020');
+        // console.log(elementById);
+        //          (2) 通过标签获得 (返回的是集合)
+        var byTagName = document.getElementsByTagName('li');
+        console.log(byTagName);
+        // 从父元素获取
+        var ol = document.getElementsByTagName('ul');
+        var elementsByTagName = ol[0].getElementsByTagName('li');
+        console.log(elementsByTagName)
+                //  (3) 通过HTML5新增方法(返回的也是集合)
+        var elementsByClassName = document.getElementsByClassName('box');
+        console.log(elementsByClassName)
+        //          (4) 指定选择器 （querySelector返回的是第一个对象,querySelectorAll返回集合）
+        var querySelector = document.querySelector('.box');//返回第一个元素
+        console.log(querySelector);
+        var querySelector = document.querySelector('#okk');//返回第一个元素
+        console.log(querySelector);
+
+                // 获取body
+                var body = document.body;
+                // 获取html元素
+                var documentElement = document.documentElement;
+
+        // 20 事件基础
+        // 事件由三部分组成  事件源  事件类型  事件处理程序
+        var btn = document.querySelector('#ok');
+        btn.onclick = function () {
+            alert('cufa ');
+        }
+        // 事件类型有：
+        //     onclick
+        //     onmouseover
+        //     onmouseout
+        //     onfocus
+        //     onblur
+        //     onmousemove
+        //     onmouseup
+        //     onmousedown
+
+        // 21. 修改元素
+        var btn = document.querySelector('#ok');
+        btn.onclick = function () {
+            this.innerText = '你好';
+        }
+        btn.innerHTML = '<strong>你好</strong>';//识别html标签
+        // 也可以通过 innertext/innerhtml 得到原本的内容
+        // 其他元素也一样的改 比如src等。。。。
+        // 表单内容修改自己查把
+
+        // 22. 修改样式属性
+        var style = document.getElementById('style');
+        style.onclick = function () {
+            // this.style.backgroundColor = 'red';
+            // this.style.width = '200px';
+            // this.style.display = 'none';
+
+            this.className = 'change';     //直接换class！！！！效率更高
+        }
+
+        // 23. 自定义属性！！
+        // element.getAttribute('name')
+        // 设置属性值
+        // element.setAttribute('k','v')
+
+        // 24. 节点操作
+        // 父子兄弟的一系列操作节点
+        //     （1） 父节点
+        var parentNode = btn.parentNode;//最近一级的父节点
+        console.log(parentNode);
+            // （2） 子节点
+        var childNodes = parentNode.childNodes;//这个包括了所有的元素节点、文本节点等。。
+        // 文本节点的nodeType为3
+        // 元素节点的nodeType为1
+        // 属性节点。。。。  为2
+        console.log(childNodes)
+        var children = parentNode.children;//这个只包括元素节点
+        console.log(children)
+        var firstChild = parentNode.firstChild;
+        var lastChild = parentNode.lastChild;
+        var firstElementChild = parentNode.firstElementChild;
+        var lastElementChild = parentNode.lastElementChild;
+            // （3）兄弟节点
+        var nextSibling = btn.nextSibling;//包括元素节点、文本节点
+        var nextElementSibling = btn.nextElementSibling;//不包括
+        var previousSibling = btn.previousSibling;
+        var previousElementSibling = btn.previousElementSibling;
+            // （4） 创建、添加节点
+        var htmlElement = document.createElement('li');
+        htmlElement.innerText = 'okkkkkkkkkkkkkkkkk';
+        ol[0].appendChild(htmlElement);
+        var htmlElement2 = document.createElement('li');
+        htmlElement2.innerText = '09090';
+        ol[0].insertBefore(htmlElement2,ol[0].children[0]);
+            // （5） 删除节点
+        ol[0].removeChild(htmlElement2);
+            // （6） 复制节点
+        var olElement = ol[0];
+        var child = olElement.children[0];
+        var cloneNode = child.cloneNode(true);//深拷贝
+        olElement.appendChild(cloneNode);
+
+        // 25. 事件高级！！！！
+        // 之前的都是传统的注册事件...
+        // 高级用addEventListener()
+        // btn.addEventListener('click',function () {
+        //     alert('22222');
+        // });
+
+        // 删除事件
+        btn.onclick = null;
+        var func = function () {
+            alert('22222');
+            btn.removeEventListener('click',func);
+        }
+        btn.addEventListener('click',func);
+
+        // 26. DOM事件流
+        //     捕获阶段
+        //     当前目标阶段
+        //     冒泡阶段
+        var son = document.querySelector('.son');
+        var father = document.querySelector('.father');
+        son.addEventListener('click',function () {
+            alert('son buhuo');
+        },true);    //true代表添加到了捕获阶段 false和默认添加到冒泡阶段
+        father.addEventListener('click',function () {
+            alert('father buhuo ');
+        },true);    //true代表添加到了捕获阶段 false和默认添加到冒泡阶段
+
+        son.addEventListener('click',function () {
+            alert('son maopao');
+        },false);    //true代表添加到了捕获阶段 false和默认添加到冒泡阶段
+        father.addEventListener('click',function () {
+            alert('father maopao ');
+        },false);    //true代表添加到了捕获阶段 false和默认添加到冒泡阶段
+
+        // 27. 事件对象
+        btn.addEventListener('click',function (e) { //e就是世界对象
+            console.log(e);//查看e对象
+            var target = e.target; //指向了点击的元素 和 this不一样
+        })
+
+        // 28. 阻止默认行为
+        btn.addEventListener('click',function (e) { //e就是世界对象
+            e.preventDefault();//三者都行的 只不过这个有兼容性问题
+            // e.returnValue;
+            // return false;   //但是他只限用于传统写法
+
+            e.stopPropagation(); //阻止事件冒泡！！！！
+        })
+
+        // 29. 事件委托
+        //  原理：不给每个子节点添加事件，而是通过给公共父节点添加，然后利用冒泡原理来处理子节点！
+        var weituo = document.querySelector('.weituo');
+        weituo.addEventListener('click',function (e) {
+            // alert('ok啦');
+            e.target.style.backgroundColor = 'pink';
+        })
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+  "code": 200,
+  "msg": [
+    {
+      "isFile": 0,
+      "path": "1.rar",
+      "fileLength": 0
+    },
+    {
+      "isFile": 0,
+      "path": "2.rar",
+      "fileLength": 0
+    },
+    {
+      "isFile": 0,
+      "path": "ok.exe",
+      "fileLength": 0
+    },
+    {
+      "isFile": 0,
+      "path": "ok.png",
+      "fileLength": 0
+    },
+    {
+      "isFile": 0,
+      "path": "3.png",
+      "fileLength": 0
+    },
+    {
+      "isFile": 0,
+      "path": "7.png",
+      "fileLength": 0
+    },
+    {
+      "isFile": 0,
+      "path": "x.pdf",
+      "fileLength": 0
+    },
+    {
+      "isFile": 0,
+      "path": "x.rar",
+      "fileLength": 0
+    },
+    {
+      "isFile": 1,
+      "path": "shauna/",
+      "fileLength": 0
+    },
+    {
+      "isFile": 0,
+      "path": "xxx.png",
+      "fileLength": 0
+    },
+    {
+      "isFile": 0,
+      "path": "1.png",
+      "fileLength": 0
+    }
+  ]
+}

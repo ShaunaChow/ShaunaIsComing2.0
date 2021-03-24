@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <link rel="stylesheet" href="/primary/static/success.css">
+</head>
+<body>
+    <div th:insert="~{index::header}"></div>
+    <div class="successpage">
+        <a href="/">登陆成功! 点击这里返回首页！</a>
+        <a href="/primary/repository/repository.html">查看我的仓库！</a>
+    </div>
+    <div th:insert="~{index::tailer}"></div>
+</body>
+</html>

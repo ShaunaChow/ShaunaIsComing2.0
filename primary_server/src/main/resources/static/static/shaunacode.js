@@ -39,7 +39,8 @@ var outputToShow = document.querySelector('.outputToShow');
 codeToSend.value = "import java.util.*;\n" +
     "\n" +
     "/**\n" +
-    " * 请开始你的表演!!!\n" +
+    " * @Version 2.0.1\n" +
+    " * @ContactUs z1023778132@icloud.com\n" +
     " */\n" +
     "\n" +
     "public class Main{\n" +
@@ -70,7 +71,7 @@ run.onclick = function (e) {
         }else if(request.status >= 400){
             outputToShow.value = "出现错误\n";
         }
-        run.innerHTML = "运行";
+        run.innerHTML = "点击运行";
     };
     request.send("source="+source+"&input="+input);
 };
