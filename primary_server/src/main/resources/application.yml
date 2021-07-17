@@ -1,5 +1,5 @@
 server:
-  port: 28000
+  port: ${primaryPort}
 spring:
   application:
     name: Primary-server
@@ -7,10 +7,10 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://106.52.31.207:28001/eureka/
+      defaultZone: http://${eurekaIp}:${eurekaPort}/eureka/
   instance:
     instance-id: Primary-server
     prefer-ip-address: true
-    ip-address: 106.52.31.207
+    ip-address: ${primaryIp}
 
         #ip-address: 106.52.31.207把这个服务部署在腾讯云上！

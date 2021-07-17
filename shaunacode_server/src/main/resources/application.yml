@@ -1,5 +1,5 @@
 server:
-  port: 28006
+  port: ${codePort}
 spring:
   application:
     name: ShaunaCode-server
@@ -7,11 +7,11 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://106.52.31.207:28001/eureka/
+      defaultZone: http://${eurekaIp}:${eurekaPort}/eureka/
   instance:
     instance-id: ShaunaCode-server
     prefer-ip-address: true
-    ip-address: 8.131.57.153
+    ip-address: ${codeIp}
 
 #ip-address: 8.131.57.153把这个服务部署在阿里云上！
 
