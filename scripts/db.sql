@@ -41,7 +41,7 @@ create table roles (
   roleName varchar(50) default null,
   description varchar(255) default null,
   createTime timestamp default now(),
-  updateTime timestamp,
+  updateTime timestamp default now(),
   unique key unique_roleName (roleName)
 );
 
@@ -130,11 +130,11 @@ create table oauth_client_details(
 );
 
 INSERT INTO oauth_client_details VALUES ('c1', 'res1',
-'123', 'ROLE_ADMIN,ROLE_USER,ROLE_API',
+'$2a$10$9S8Wx5zDJYDE8fUqJgmvJOUSkGHMB0YYhSFFOYZM9JZpjlW5GXPR2', 'ROLE_ADMIN,ROLE_USER,ROLE_API',
 'client_credentials,password,authorization_code,implicit,refresh_token', 'http://www.shauna.top',
 NULL, 7200, 259200, NULL, now(), 0, 0, 'false'),
 ('c2', 'res2',
-'123', 'ROLE_API',
+'$2a$10$9S8Wx5zDJYDE8fUqJgmvJOUSkGHMB0YYhSFFOYZM9JZpjlW5GXPR2', 'ROLE_API',
 'client_credentials,password,authorization_code,implicit,refresh_token', 'http://www.shauna.top',
 NULL, 31536000, 2592000, NULL, now(), 0, 0, 'false');
 
